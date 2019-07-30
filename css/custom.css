@@ -1,0 +1,239 @@
+/* ---------- CUSTOM CSS ---------- */
+
+body {
+	background-image: url(/img/background.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	background-color: #bfbfbf;
+}
+
+.site-wrapper {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+
+.main-header {
+	background-color: transparent;
+}
+
+/* ---------- TOP HEADER ---------- */
+
+@media only screen and (max-width:9999px) {
+    .main-header {
+        box-sizing: border-box;
+        height: auto;
+        min-height: 40vh;
+        height: 40vh;
+        padding: 5% 0
+    }
+}
+.main-header-short {
+    height: 240px;
+}
+
+nav ul {
+    float:right;
+}
+
+nav ul li {
+    float:left;
+    list-style: none;
+    color: white;
+    padding-left:1em;
+    margin-left:1em;
+    border-left:1px dashed white;
+    font-size:1em;
+}
+
+@media only screen and (max-width:900px) {
+    nav ul li {
+        font-size:0.75em;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    nav ul li {
+        font-size:1.2em;
+    }
+}
+
+nav ul li:first-child {
+    padding-left:0;
+    margin-left:0;
+    border-left:0;
+}
+
+nav ul li a {
+    color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .blog-logo img {
+        height: 40px;
+    }
+}
+
+h2.page-description {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    color:white;
+}
+
+@media only screen and (max-width:900px) {
+    h2.page-description {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    h2.page-description {
+        font-size: 1.5rem;
+    }
+}
+
+h2.page-description a {
+    color:#034c7d;
+    text-decoration: none;
+}
+
+.home-template .main-header::after {
+	background: none;
+}
+
+/* ---------- HOME COLUMNS ---------- */
+
+section.masonry.disablecolumns {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+}
+
+section.masonry.disablecolumns div.column {
+    display:inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin-left:0em;
+    margin-right:0em;
+}
+
+@media only screen and (min-width:850px) {
+    section.masonry.disablecolumns div.column {
+        width: 30%;
+        margin-left:0.75em;
+        margin-right:0.75em;
+    }
+}
+
+.post-excerpt p {
+    overflow: hidden;
+}
+
+.masonry .post-excerpt p a,
+.post-excerpt p a {
+    color:#034c7d;
+}
+
+.read-more:after {
+    color:#034c7d;
+}
+
+/* ---------- POST PAGE ---------- */
+
+body.post-template article header {
+    margin-bottom: 0px;
+}
+
+body.post-template article main {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position:relative;
+}
+
+body.post-template article main figure {
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin-top:-5rem;
+    z-index:-1;
+    background-size: cover;
+    filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: grayscale(100%); /* Current draft standard */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray; /* IE6+ */
+    opacity:0.05;
+}
+
+body.post-template article div.wrapper {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+body.post-template section.post-content {
+    font-size:1.4rem;
+    line-height:1.5em;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@media only screen and (max-width:900px) {
+    body.post-template section.post-content {
+        width:90%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    body.post-template section.post-content {
+        width:95%;
+    }
+}
+
+body.post-template section.post-content a {
+    color:#034c7d;
+    text-decoration: none;
+}
+
+body.post-template section.post-content div.gallery-container + * {
+    margin-top:1.75em !important;
+}
+
+body.post-template section.post-content .ug-thumb-wrapper img.ug-thumb-image {
+    left:50% !important;
+}
+
+body.post-template section.post-content hr {
+    border-top:1px solid #034c7d;
+}
+
+body.post-template section.post-content blockquote p {
+    font-style: normal;
+    font-size:0.75em;
+}
+
+body.post-template aside {
+    overflow-x:hidden;
+    margin-top:0px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+	background-color: #777;
+	color:#fff;
+	position:fixed;
+	width:calc(100% - 3rem);
+	bottom:0px;
+}
+
+.site-footer a {
+	color:#fff;
+}
+
+.author-image {
+	top:-48px;
+}
+
+/* ---------- EOF ---------- */
